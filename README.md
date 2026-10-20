@@ -1,9 +1,13 @@
 # Vocabulario-C-
 Vocabulario
 
+# Anatomía de un método en C#
 
-public   bool     Validar   (Categoria c)
-  ↑        ↑         ↑          ↑
-modificador  tipo    nombre    parámetro
-de acceso   de      del       (tipo + nombre)
-            retorno método
+```csharp
+public bool Validar(Categoria c)
+  ↑     ↑      ↑         ↑
+  │     │      │         └── Parámetro (tipo + nombre)
+  │     │      └──────────── Nombre del método
+  │     └─────────────────── Tipo de retorno
+  └───────────────────────── Modificador de acceso
+```
