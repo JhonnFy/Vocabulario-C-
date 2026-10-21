@@ -74,12 +74,6 @@ r.ConvertirMayuscula("zul");      // ← usas el objeto
 **Siempre son 4 capas. Cambia la tecnología de `Presentation`, no la cantidad.**
 ---
 
-
-
----
-## Convenciones de nombres por capa
-
-```markdown
 ## Estándar de nombres por capa
 
 | Capa | Convención | Ejemplo |
@@ -90,6 +84,3 @@ r.ConvertirMayuscula("zul");      // ← usas el objeto
 | **Services** | Sufijo `Service` (singular) | `CategoriaService`, `TicketService` |
 | **Presentation (consola)** | Descriptivo | `Menu` |
 | **Presentation (web)** | Sufijo `Controller` | `TicketController` |
-```
-
----
