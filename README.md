@@ -27,5 +27,7 @@ public bool Validar(Categoria c)
 
 ---
 static = no depende de un objeto. Se llama desde la clase directamente.
+
+static es un modificador de PER TENENCIA (pertenece a la clase, no al objeto). No cambia quién puede acceder, cambia si necesita objeto o no.
 ---
 
