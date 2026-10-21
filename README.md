@@ -52,15 +52,15 @@ r.ConvertirMayuscula("zul");      // ← usas el objeto
 ---
 
 
----
+
 ## Capas de la arquitectura
 
 | Capa | Qué hace |
 |---|---|
-| **Models** | Plantillas (datos) |
-| **Data** | SQL y conexión |
-| **Services** | Reglas de negocio |
-| **Presentation** | Entrada/salida con el usuario |
+| Models | Plantillas (datos) |
+| Data | SQL y conexión |
+| Services | Reglas de negocio |
+| Presentation | Entrada/salida con el usuario |
 
 ### Cómo se implementa `Presentation` según la tecnología
 
