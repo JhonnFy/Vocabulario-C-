@@ -88,7 +88,7 @@ r.ConvertirMayuscula("zul");      // ← usas el objeto
 | **Presentation (consola)** | Descriptivo | `Menu` |
 | **Presentation (web)** | Sufijo `Controller` | `TicketController` |
 
-<img width="806" height="336" alt="image" src="https://github.com/user-attachments/assets/363bb205-f56e-4c28-9ac6-55d7c7ead0ff" />
+<img width="806" height="345" alt="image" src="https://github.com/user-attachments/assets/5dbe8712-581f-455f-9f9a-dc2f9a039e61" />
 
 
 
