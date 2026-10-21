@@ -51,3 +51,13 @@ var r = new Rules();              // ← creas objeto
 r.ConvertirMayuscula("zul");      // ← usas el objeto
 ---
 
+## Capas
+---
+Capa	Qué hace
+Models	Plantillas (datos)
+Data	SQL y conexión
+Services	Reglas de negocio
+Presentation	Entrada/salida con el usuario
+---
+
+
