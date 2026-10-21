@@ -13,7 +13,7 @@ public bool Validar(Categoria c)
 ```
 
 ---
-## Metodos Para Una Capa Datos
+## Metodos Para Una Capa Datos CRUD
 
 ObtenerTodos, ObtenerPorId, Crear, Actualizar, Eliminar
 
