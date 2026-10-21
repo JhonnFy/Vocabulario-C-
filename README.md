@@ -24,3 +24,8 @@ public bool Validar(Categoria c)
 | Nadie más toca `Data` | Si otra capa lo toca, se rompe el flujo |
 
 ---
+
+---
+static = no depende de un objeto. Se llama desde la clase directamente.
+---
+
