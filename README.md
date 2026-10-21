@@ -26,8 +26,21 @@ public bool Validar(Categoria c)
 ---
 
 ---
-static = no depende de un objeto. Se llama desde la clase directamente.
+## static
 
-static es un modificador de PER TENENCIA (pertenece a la clase, no al objeto). No cambia quién puede acceder, cambia si necesita objeto o no.
+**Qué es:** modificador de pertenencia. **No es modificador de acceso.**
+
+**Qué hace:** indica que el método/propiedad/clase **pertenece a la clase**, no a los objetos creados de ella.
+
+**Consecuencia:** se llama **desde la clase directamente**, **sin crear objeto**.
+
+### Sin static
+
+```csharp
+public string ConvertirMayuscula(string cadena) { ... }
+
+// Uso:
+var r = new Rules();              // ← creas objeto
+r.ConvertirMayuscula("zul");      // ← usas el objeto
 ---
 
