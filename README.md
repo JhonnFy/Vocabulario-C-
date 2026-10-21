@@ -79,17 +79,17 @@ r.ConvertirMayuscula("zul");      // ← usas el objeto
 ---
 ## Convenciones de nombres por capa
 
+```markdown
+## Estándar de nombres por capa
+
 | Capa | Convención | Ejemplo |
-|---|---|---|
+| :--- | :--- | :--- |
 | **Models** | Sin sufijo | `Categoria`, `Ticket`, `Usuario` |
 | **Data (repositorios)** | Sufijo `Repository` | `CategoriaRepository`, `TicketRepository` |
 | **Data (conexión)** | Descriptivo | `Conexion` |
 | **Services** | Sufijo `Service` (singular) | `CategoriaService`, `TicketService` |
 | **Presentation (consola)** | Descriptivo | `Menu` |
 | **Presentation (web)** | Sufijo `Controller` | `TicketController` |
-
-<img width="806" height="345" alt="image" src="https://github.com/user-attachments/assets/5dbe8712-581f-455f-9f9a-dc2f9a039e61" />
-
-
+```
 
 ---
