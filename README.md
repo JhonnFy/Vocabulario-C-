@@ -51,13 +51,27 @@ var r = new Rules();              // ← creas objeto
 r.ConvertirMayuscula("zul");      // ← usas el objeto
 ---
 
-## Capas
+
 ---
-Capa	Qué hace
-Models	Plantillas (datos)
-Data	SQL y conexión
-Services	Reglas de negocio
-Presentation	Entrada/salida con el usuario
+## Capas de la arquitectura
+
+| Capa | Qué hace |
+|---|---|
+| **Models** | Plantillas (datos) |
+| **Data** | SQL y conexión |
+| **Services** | Reglas de negocio |
+| **Presentation** | Entrada/salida con el usuario |
+
+### Cómo se implementa `Presentation` según la tecnología
+
+| Tecnología | `Presentation` se implementa con... |
+|---|---|
+| Consola | `Menu.cs` (menú, `Console.ReadLine`) |
+| Web API | `Controllers/` (`[HttpGet]`, JSON) |
+| Web MVC | `Controllers/` + `Views/` |
+| Escritorio | `Forms/` o `Views/` (botones, ventanas) |
+
+**Siempre son 4 capas. Cambia la tecnología de `Presentation`, no la cantidad.**
 ---
 
 
