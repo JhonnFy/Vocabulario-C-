@@ -12,6 +12,10 @@ public bool Validar(Categoria c)
   └───────────────────────── Modificador de acceso
 ```
 
+```
+Metodos Para Una Capa Datos
+ObtenerTodos, ObtenerPorId, Crear, Actualizar, Eliminar
+```
 
 ---
 
