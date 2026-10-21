@@ -27,6 +27,7 @@ public bool Validar(Categoria c)
 
 ---
 ## static
+Puntualmente static es: Pertenece a la clase no a los objetos creados de ella
 
 **Qué es:** modificador de pertenencia. **No es modificador de acceso.**
 
