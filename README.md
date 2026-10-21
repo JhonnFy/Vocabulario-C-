@@ -75,3 +75,49 @@ r.ConvertirMayuscula("zul");      // ← usas el objeto
 ---
 
 
+
+## Convenciones de nombres en .NET (estándar)
+
+### Regla general
+- **PascalCase** para clases, propiedades, métodos, namespaces.
+- **camelCase** para parámetros y variables locales.
+- **`_camelCase`** para campos privados (ej: `_conexion`).
+
+### Por capa
+
+| Capa | Convención | Ejemplo |
+|---|---|---|
+| **Models** | **Sin sufijo ni prefijo** | `Categoria`, `Ticket`, `Usuario`, `Estado`, `Comentario` |
+| **Data (repositorios)** | Sufijo **`Repository`** | `CategoriaRepository`, `TicketRepository` |
+| **Data (conexión)** | Nombre descriptivo | `Conexion` |
+| **Services** | Sufijo **`Service`** (singular) | `CategoriaService`, `TicketService` |
+| **Presentation (web)** | Sufijo **`Controller`** | `TicketController` |
+| **Presentation (consola)** | Nombre descriptivo | `Menu` |
+
+### Nombres que NO se usan
+- **Carpetas con el mismo nombre que una clase del proyecto** → el namespace choca con el tipo (CS0118).
+- **Sufijos redundantes** en modelos (`CategoriaModel`) → no es el estándar; los modelos van limpios.
+- **Espacios en nombres de carpetas o archivos** → rompe namespaces y comandos.
+- **Minúscula inicial en clases** (`categoria`) → PascalCase siempre.
+
+### Ejemplo de estructura correcta
+NetTicket/
+├── Models/
+│ ├── Categoria.cs → class Categoria
+│ ├── Ticket.cs → class Ticket
+│ ├── Usuario.cs → class Usuario
+│ ├── Estado.cs → class Estado
+│ └── Comentario.cs → class Comentario
+├── Data/
+│ ├── Connection/
+│ │ └── Conexion.cs → class Conexion
+│ └── Repositories/
+│ ├── CategoriaRepository.cs → class CategoriaRepository
+│ ├── TicketRepository.cs → class TicketRepository
+│ └── ...
+└── Services/
+├── CategoriaService.cs → class CategoriaService
+└── ...
+
+text
+
