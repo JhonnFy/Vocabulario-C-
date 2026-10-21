@@ -13,11 +13,12 @@ public bool Validar(Categoria c)
 ```
 
 ---
-```
 ## Metodos Para Una Capa Datos
+
 ObtenerTodos, ObtenerPorId, Crear, Actualizar, Eliminar
-```
+
 ---
+
 ---
 
 ## Reglas de arquitectura por capas
