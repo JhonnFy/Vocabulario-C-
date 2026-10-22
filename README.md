@@ -84,3 +84,7 @@ r.ConvertirMayuscula("zul");      // ← usas el objeto
 | **Services** | Sufijo `Service` (singular) | `CategoriaService`, `TicketService` |
 | **Presentation (consola)** | Descriptivo | `Menu` |
 | **Presentation (web)** | Sufijo `Controller` | `TicketController` |
+
+
+
+Cuando la DB usa snake_case y C# usa PascalCase, el SP (o el SELECT) pone los alias para que coincidan
