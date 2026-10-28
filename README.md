@@ -112,3 +112,21 @@ La clase NO crea sus dependencias con `new`. Las recibe desde afuera (por el con
 - Flexible: cambiar la implementación no rompe la clase.
 
 **No es herencia ni polimorfismo.** Es otro concepto.
+
+
+
+
+## readonly
+
+**Qué es:** modificador de campo que garantiza que el valor solo se puede asignar **una vez**, en el constructor.
+
+**Qué garantiza:**
+- El constructor **sí** puede asignarlo.
+- Después del constructor, **nadie** puede reasignarlo (ni métodos, ni propiedades).
+- El campo queda fijo con ese objeto durante toda la vida del objeto.
+
+**Dónde se usa en el proyecto:**
+```csharp
+private readonly Conexion _conexion;
+private readonly IConfiguration _iConfiguration;
+private readonly UsuarioRepository _repository;
