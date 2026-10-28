@@ -1,4 +1,4 @@
-# Vocabulario-C-
+# VocabularioC
 Vocabulario
 
 # Anatomía de un método en C#
@@ -88,3 +88,27 @@ r.ConvertirMayuscula("zul");      // ← usas el objeto
 
 
 Cuando la DB usa snake_case y C# usa PascalCase, el SP (o el SELECT) pone los alias para que coincidan
+
+
+
+
+
+## Inyección de dependencias (DI)
+
+**Frase clave:**
+> "Recibir lo que necesitas por constructor, en vez de crearlo adentro."
+
+**Qué significa:**
+La clase NO crea sus dependencias con `new`. Las recibe desde afuera (por el constructor) y las guarda en un campo privado `readonly`.
+
+**Ejemplo del proyecto:**
+- `Conexion(IConfiguration config)` → recibe la configuración.
+- `CategoriaRepository(Conexion conexion)` → recibe la conexión.
+- `CategoriaService(CategoriaRepository repo)` → recibe el repositorio.
+
+**Por qué:**
+- Desacopla: cada clase no sabe cómo se construye su dependencia.
+- Testeable: puedes pasar un mock.
+- Flexible: cambiar la implementación no rompe la clase.
+
+**No es herencia ni polimorfismo.** Es otro concepto.
